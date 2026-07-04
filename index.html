@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>A. Shintya Lestari</title>
+    <link rel="icon" type="image/png" href="assets/images/logo/coffee.png">
+    <!-- Bootstrap 5 + Icons -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top py-2">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <!-- <span class="text-primary me-1"><i class="bi bi-cup-hot-fill"></i></span>sintya -->
+                <span class="text-primary me-1">
+                    <img src="assets/images/logo/coffee.png" alt="logo" width="25">
+                </span>shintya
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2 align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#hero-3d">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="themeToggle" class="btn rounded-pill px-3 py-1">
+                            <!-- <i class="bi bi-moon-fill" id="themeIcon"></i> -->
+                            <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO 3D -->
+    <section id="hero-3d">
+        <div id="three-container"></div>
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right" data-aos-duration="800">
+                        <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-4 py-2 mb-3 fs-6">
+                            <i class="bi bi-code-slash me-1"></i> Fullstack Developer
+                        </span>
+                        <h1 class="display-4 fw-bold text-shadow">
+                            A. Shintya <span class="text-primary">Lestari</span>
+                        </h1>
+                        <p class="lead opacity-100 mt-3">
+                            Programmer &#x25CF; Backend & Fullstack Development 
+                            &#x25CF; Laravel & PHP Developer &#x25CF; 2+ years building scalable web apps.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap mt-4">
+                            <a href="#contact" class="btn btn-primary rounded-pill px-5">Hubungi Saya</a>
+                            <a href="#projects" class="btn btn-dark rounded-pill px-4 py-2">Lihat Proyek</a>
+                        </div>
+                        <div class="mt-4 d-flex gap-3">
+                            <a href="https://www.linkedin.com/in/sintya-lestari/" class="social-link" target="_blank">
+                                <i class="bi bi-linkedin fs-4"></i>
+                            </a>
+                            <a href="https://github.com/Siintya" class="social-link" target="_blank">
+                                <i class="bi bi-github fs-4"></i>
+                            </a>
+                            <a href="mailto:ajeng.sintya15@gmail.com" class="social-link">
+                                <i class="bi bi-envelope fs-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="profile-placeholder">
+                            <img class="img-fluid" src="assets/images/Ajeng-Shintya-profile.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5 section-bg">
+        <div class="container py-4" data-aos="fade-up">
+            <div class="row g-5">
+                <div class="col-md-9 text-center mx-auto">
+                    <h2 class="section-title mb-5 text-center mx-auto">Tentang Saya</h2>
+                    <p class="fs-6">
+                        Saya adalah seorang <strong>Backend & Fullstack Developer</strong> dengan pengalaman lebih
+                        dari 2 tahun yang beroperasi sepenuhnya di ekosistem Linux. Berpengalaman dalam membangun
+                        aplikasi web yang scalable menggunakan Laravel, desain database, hingga deployment dan hosting
+                        maintenance.
+                    </p>
+                    <p class="fs-6">
+                        Sebagai freelancer di <strong>Siskoala</strong>, fokus pada Fullstack developer,
+                        konfigurasi VPS dan mail server. Menguasai metodologi Agile dan Waterfall untuk memastikan
+                        siklus SDLC berjalan efisien.
+                    </p>
+                    <div class="mt-4">
+                        <span class="skill-tag"><i class="bi bi-ubuntu"></i> Linux</span>
+                        <span class="skill-tag"><i class="bi bi-stack"></i> Laravel</span>
+                        <span class="skill-tag"><i class="bi bi-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="bi bi-code-slash"></i> PHP · JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-5">
+        <div class="container py-4" data-aos="fade-up">
+            <h2 class="section-title mb-5">Keahlian</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-3d-hover bg-transparent h-100 p-3">
+                        <div class="card-body">
+                            <i class="bi bi-code-square fs-1 text-primary"></i>
+                            <h5 class="mt-3">Fullstack Web</h5>
+                            <p>PHP, JavaScript, HTML, CSS, Python, Laravel, Bootstrap, REST API, UI/UX responsive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-3d-hover bg-transparent h-100 p-3">
+                        <div class="card-body">
+                            <i class="bi bi-server fs-1 text-primary"></i>
+                            <h5 class="mt-3">Infrastruktur & Server</h5>
+                            <p>Linux (Ubuntu/Debian), VPS, Virtualmin, DNS, Apache, Email Server, migrasi, SSL.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-3d-hover bg-transparent h-100 p-3">
+                        <div class="card-body">
+                            <i class="bi bi-database fs-1 text-primary"></i>
+                            <h5 class="mt-3">Database & Integrasi</h5>
+                            <p>MySQL, desain DB, query optimization, Xendit payment gateway, webhook.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-5 section-bg">
+        <div class="container py-4" data-aos="fade-up">
+            <h2 class="section-title mb-5">Pengalaman</h2>
+            <div class="timeline">
+                <div class="card bg-transparent card-hover mb-4 p-3" data-aos="fade-up">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h5><i class="bi bi-briefcase-fill text-primary me-2"></i>Programmer Freelance · Siskoala / GOCL
+                        </h5>
+                        <span class="text-muted small">Feb 2025 – Sekarang</span>
+                    </div>
+                    <ul class="list-unstyled small">
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Company profile multi-bahasa + Google Maps API (www.gocl.co.id)</li>
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Integrasi Xendit Payment Gateway (webhook, transaksi Rp 2 M)</li>
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Sistem Monitoring Manajemen Proyek (SMMP) & SSO Laravel Passport</li>
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Kelola VPS Debian, Virtualmin, Usermin, migrasi dari RumahWeb ke IDCloudhost</li>
+                    </ul>
+                </div>
+                <div class="card bg-transparent card-hover mb-4 p-3" data-aos="fade-up">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h5><i class="bi bi-briefcase-fill text-primary me-2"></i>Programmer Freelance · Siskoala
+                            (Produk)</h5>
+                        <span class="text-muted small">Sep 2025</span>
+                    </div>
+                    <ul class="list-unstyled small">
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> PROMODS (Project Monitoring System for Constructions)</li>
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> CMS Inventaris kendaraan Toyota Auto2000</li>
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> SIM Sekolah (siswa, guru, nilai, absensi, dll)</li>
+                    </ul>
+                </div>
+                <div class="card bg-transparent card-hover mb-4 p-3" data-aos="fade-up">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h5><i class="bi bi-briefcase-fill text-primary me-2"></i>Self-employed · Siskoala</h5>
+                        <span class="text-muted small">Okt 2022 – Sekarang</span>
+                    </div>
+                    <ul class="list-unstyled small">
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Company profile, SEO, Google Analytics</li>
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Frontend (HTML, CSS, JS, Bootstrap) & Backend (PHP, Laravel, API)</li>
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Klien: Yayasan Jaga Ginjal, Garasi Mobil, Adante, PT Takita, ATP</li>
+                    </ul>
+                </div>
+                <div class="card bg-transparent card-hover p-3">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h5><i class="bi bi-briefcase-fill text-primary me-2"></i>IT Internship · GLC Networks</h5>
+                        <span class="text-muted small">Mar – Jul 2021</span>
+                    </div>
+                    <ul class="list-unstyled small">
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Peserta terbaik, kontribusi ISP VEVE Selfcare Malaysia</li>
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Frontend (HTML, CSS, JS, Bootstrap), Machine Learning, PostgreSQL</li>
+                        <li><i class="bi bi-arrow-right-short fs-5 fw-bold"></i> Odoo ERP, Scriptcase, Linux CLI, Git/GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-5">
+        <div class="container py-4" data-aos="fade-up">
+            <h2 class="section-title mb-5">Featured Projects</h2>
+            <div class="row g-4">
+                <!-- Company Profile Multi-Bahasa -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm d-flex flex-column justify-content-between bg-transparent">
+                        <div class="project-img overflow-hidden rounded-top-4">
+                            <img src="assets/images/projects/gocl.png" 
+                                alt="projects" 
+                                class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="project-title fs-5 fw-bold mb-2">Company Profile & Integrasi Payment Gateway</h5>
+                            <div class="project-issuer text-truncate g-2 mb-1 text-secondary small">
+                                <i class="bi bi-buildings-fill fs-6 me-1"></i> 
+                                PT Graha Optima Cipta Lestari (GOCL)
+                            </div>
+                            <p class="project-desc small text-muted">
+                                Multi-bahasa company profile dengan integrasi 
+                                payment gateway Xendit (callback/webhooks).
+                                Total transaksi: Rp 2 Miliar.
+                            </p>
+                            <div class="mt-2 mb-3">
+                                <span class="skill-tag"><i class="bi bi-stack"></i> Laravel</span>
+                                <span class="skill-tag"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+                                <span class="skill-tag"><i class="bi bi-database"></i> MySQL</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> PHP</span>
+                                <span class="skill-tag"><i class="bi bi-google"></i> Google Maps API</span>
+                                <span class="skill-tag"><i class="bi bi-credit-card-2-front-fill"></i> Xendit</span>
+                            </div>
+                            <a href="https://gocl.co.id/" target="_blank" class="project-link">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sistem Monitoring Manajemen Proyek (SMMP) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm d-flex flex-column justify-content-between bg-transparent">
+                        <div class="project-img overflow-hidden rounded-top-4">
+                            <img src="assets/images/projects/gocl-smmp.png" 
+                                alt="projects" 
+                                class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="project-title fs-5 fw-bold mb-2">Sistem Monitoring Manajemen Proyek (SMMP)</h5>
+                            <div class="project-issuer text-truncate g-2 mb-1 text-secondary small">
+                                <i class="bi bi-buildings-fill fs-6 me-1"></i> 
+                                PT Graha Optima Cipta Lestari (GOCL)
+                            </div>
+                            <p class="project-desc small text-muted">
+                                Aplikasi monitoring proyek dengan SSO OAuth2. Manajemen infrastruktur 
+                                meliputi migrasi server, VPS, optimasi web server, 
+                                multi-domain & mail server. Serta dokumentasi proyek dan user manual.
+                            </p>
+                            <div class="mt-2 mb-3">
+                                <span class="skill-tag"><i class="bi bi-stack"></i> Laravel</span>
+                                <span class="skill-tag"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+                                <span class="skill-tag"><i class="bi bi-database"></i> MySQL</span>
+                                <span class="skill-tag"><i class="bi bi-stack"></i> Laravel Passport</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> PHP</span>
+                            </div>
+                            <a href="https://smmp.gocl.co.id/" target="_blank" class="project-link">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CMS Inventaris Kendaraan (Toyota Auto2000) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm d-flex flex-column justify-content-between bg-transparent">
+                        <div class="project-img overflow-hidden rounded-top-4">
+                            <img src="assets/images/projects/garasi-mobil.png" 
+                                alt="projects" 
+                                class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="project-title fs-5 fw-bold mb-2">CMS Inventaris Kendaraan</h5>
+                            <div class="project-issuer text-truncate g-2 mb-1 text-secondary small">
+                                <i class="bi bi-buildings-fill fs-6 me-1"></i> 
+                                Garasi Mobil Bandung
+                            </div>
+                            <p class="project-desc small text-muted">
+                                Content Management System untuk manajemen inventaris kendaraan 
+                                dengan fitur CRUD, kategorisasi, laporan real-time, dan admin panel responsif.
+                            </p>
+                            <div class="mt-2 mb-3">
+                                <span class="skill-tag"><i class="bi bi-stack"></i> Laravel</span>
+                                <span class="skill-tag"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+                                <span class="skill-tag"><i class="bi bi-database"></i> MySQL</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> PHP</span>
+                            </div>
+                            <div class="d-flex">
+                                <a href="https://garasimobil.net/" target="_blank" class="project-link me-5">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                                </a>
+                                <a href="https://godrive-siskoala.rf.gd/" target="_blank" class="project-link">
+                                    <i class="bi bi-link-45deg me-1"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adante Nawasena Muda -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm d-flex flex-column justify-content-between bg-transparent">
+                        <div class="project-img overflow-hidden rounded-top-4">
+                            <img src="assets/images/projects/adante-nawasena-muda.png" 
+                                alt="projects" 
+                                class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="project-title fs-5 fw-bold mb-2">Web Company Profile</h5>
+                            <div class="project-issuer text-truncate g-2 mb-1 text-secondary small">
+                                <i class="bi bi-buildings-fill fs-6 me-1"></i> 
+                                Adante Nawasena Muda
+                            </div>
+                            <p class="project-desc small text-muted">
+                                Company profile untuk perusahaan/entitas bernama 
+                                Adante Nawasena Muda yang menampilkan informasi profil, layanan, dan kontak.
+                            </p>
+                            <div class="mt-2 mb-3">
+                                <span class="skill-tag"><i class="bi bi-stack"></i> Laravel</span>
+                                <span class="skill-tag"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+                                <span class="skill-tag"><i class="bi bi-database"></i> MySQL</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> HTML</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> CSS</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> JavaScript</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> PHP</span>
+                            </div>
+                            <a href="https://adante.biz.id/" target="_blank" class="project-link me-5">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sistem Informasi Manajemen (SIM) Sekolah -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm d-flex flex-column justify-content-between bg-transparent">
+                        <div class="project-img overflow-hidden rounded-top-4">
+                            <img src="assets/images/projects/siskoala-sim.png" 
+                                alt="projects" 
+                                class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="project-title fs-5 fw-bold mb-2">Sistem Informasi Manajemen (SIM) Sekolah</h5>
+                            <div class="project-issuer text-truncate g-2 mb-1 text-secondary small">
+                                <i class="bi bi-buildings-fill fs-6 me-1"></i> 
+                                Siskoala
+                            </div>
+                            <p class="project-desc small text-muted">
+                                Mengembangkan SIM Sekolah yang mencakup modul manajemen siswa, guru, wali murid, nilai, absensi, jadwal, dan ekstrakurikuler.
+                            </p>
+                            <div class="mt-2 mb-3">
+                                <span class="skill-tag"><i class="bi bi-stack"></i> Laravel</span>
+                                <span class="skill-tag"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+                                <span class="skill-tag"><i class="bi bi-database"></i> MySQL</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> PHP</span>
+                            </div>
+                            <a href="https://siskoala-sekolah-sim.rf.gd" target="_blank" class="project-link me-5">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Company Profile & Donation System -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm d-flex flex-column justify-content-between bg-transparent">
+                        <div class="project-img overflow-hidden rounded-top-4">
+                            <img src="assets/images/projects/jaga-ginjal-indonesia.png" 
+                                alt="projects" 
+                                class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="project-title fs-5 fw-bold mb-2">Web Company Profile & Donation System</h5>
+                            <div class="project-issuer text-truncate g-2 mb-1 text-secondary small">
+                                <i class="bi bi-buildings-fill fs-6 me-1"></i> 
+                                Yayasan Jaga Ginjal Indonesia (JGI)
+                            </div>
+                            <p class="project-desc small text-muted">
+                                Company profile dengan sistem donasi terintegrasi 
+                                payment gateway Xendit. Mengelola transaksi donasi 
+                                real-time via webhook callback Xendit.
+                            </p>
+                            <div class="mt-2 mb-3">
+                                <span class="skill-tag"><i class="bi bi-stack"></i> Laravel</span>
+                                <span class="skill-tag"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+                                <span class="skill-tag"><i class="bi bi-database"></i> MySQL</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> HTML</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> CSS</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> JavaScript</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> PHP</span>
+                            </div>
+                            <a href="https://jagaginjal.gocl.co.id/" target="_blank" class="project-link me-5">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek ISP VEVE Selfcare Malaysia -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm d-flex flex-column justify-content-between bg-transparent">
+                        <div class="project-img overflow-hidden rounded-top-4">
+                            <img src="assets/images/projects/veve-selfcare.png" 
+                                alt="projects" 
+                                class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="project-title fs-5 fw-bold mb-2">Proyek ISP VEVE Selfcare Malaysia</h5>
+                            <div class="project-issuer text-truncate g-2 mb-1 text-secondary small">
+                                <i class="bi bi-buildings-fill fs-6 me-1"></i> 
+                                VEVE Selfcare
+                            </div>
+                            <p class="project-desc small text-muted">
+                                Berpartisipasi dalam pengembangan frontend & Backend 
+                                untuk aplikasi web ISP VEVE Selfcare Malaysia.
+                            </p>
+                            <div class="mt-2 mb-3">
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> HTML</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> CSS</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> JavaScript</span>
+                                <span class="skill-tag"><i class="bi bi-code-slash"></i> PHP</span>
+                                <span class="skill-tag"><i class="bi bi-stack"></i> Laravel</span>
+                                <span class="skill-tag"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+                                <span class="skill-tag"><i class="bi bi-database"></i> PostgreSQL</span>
+                            </div>
+                            <a href="https://selfcare.veve.my/app/login/" target="_blank" class="project-link me-5">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="py-5 section-bg">
+        <div class="container py-4" data-aos="fade-up">
+            <h2 class="section-title mb-5">Sertifikat</h2>
+            <div class="row g-4 mb-5">
+                <!-- Back End Development & APIs -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card cert-card bg-transparent h-100 overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <div class="col-4 col-md-5 p-0">
+                                <div class="cert-img-wrapper h-100 d-flex align-items-stretch" style="min-height: 140px; background: #f8f9fa;">
+                                    <img src="assets/images/certificates/Back End Development & APIs.png" 
+                                        alt="Back End Development & APIs Certificate" 
+                                        class="w-100 h-100" 
+                                        style="object-fit: cover; object-position: center;">
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-7 p-3">
+                                <h5 class="cert-title fw-bold mb-2 fs-5">Back End Development & APIs</h5>
+                                <div class="cert-issuer mb-2 text-secondary small d-flex justify-content-between">
+                                    <div class="text-truncate"><i class="bi bi-buildings-fill fs-6 me-1"></i> FreeCodeCamp</div>  
+                                    <div class="text-truncate"><i class="bi bi-calendar-event-fill fs-6 me-1"></i> Oct 2024</div>
+                                </div>
+                                <p class="cert-desc small text-muted flex-grow-1">Certified in back-end application development and API integration.</p>
+                                <a href="https://www.freecodecamp.org/certification/girlscoder__/back-end-development-and-apis" target="_blank" class="cert-link">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> Show credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internet Safety -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card cert-card bg-transparent h-100 overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <div class="col-4 col-md-5 p-0">
+                                <div class="cert-img-wrapper h-100 d-flex align-items-stretch" style="min-height: 140px; background: #f8f9fa;">
+                                    <img src="assets/images/certificates/Internet Safety.png" 
+                                        alt="Internet Safety Certificate" 
+                                        class="w-100 h-100" 
+                                        style="object-fit: cover; object-position: center;">
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-7 p-3">
+                                <h5 class="cert-title fw-bold mb-2 fs-5">Internet Safety</h5>
+                                <div class="cert-issuer mb-2 text-secondary small d-flex justify-content-between">
+                                    <div class="text-truncate"><i class="bi bi-buildings-fill fs-6 me-1"></i> ITTS Open Course</div>  
+                                    <div class="text-truncate"><i class="bi bi-calendar-event-fill fs-6 me-1"></i> Mar 2024</div>
+                                </div>
+                                <p class="cert-desc small text-muted flex-grow-1">Certified in digital security, data privacy, and safe internet practices.</p>
+                                <a href="assets/certificates/pdf/Internet Safety - ITTS.pdf" target="_blank" class="cert-link">
+                                    <i class="bi bi-file-earmark-pdf-fill me-1"></i> Show document
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sistem Operasi (OS) -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card cert-card bg-transparent h-100 overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <div class="col-4 col-md-5 p-0">
+                                <div class="cert-img-wrapper h-100 d-flex align-items-stretch" style="min-height: 140px; background: #f8f9fa;">
+                                    <img src="assets/images/certificates/Sistem Operasi (OS).png" 
+                                        alt="Sistem Operasi (OS)" 
+                                        class="w-100 h-100" 
+                                        style="object-fit: cover; object-position: center;">
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-7 p-3">
+                                <h5 class="cert-title fw-bold mb-2 fs-5">Sistem Operasi (OS)</h5>
+                                <div class="cert-issuer mb-2 text-secondary small d-flex justify-content-between">
+                                    <div class="text-truncate"><i class="bi bi-buildings-fill fs-6 me-1"></i> MASTEL Digital Academy</div>  
+                                    <div class="text-truncate"><i class="bi bi-calendar-event-fill fs-6 me-1"></i> Mar 2024</div>
+                                </div>
+                                <p class="cert-desc small text-muted flex-grow-1">Certified in operating system architecture, process management, and system administration.</p>
+                                <a href="assets/certificates/pdf/Sistem Operasi - MASTEL.pdf" target="_blank" class="cert-link">
+                                    <i class="bi bi-file-earmark-pdf-fill me-1"></i> Show document
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Testing -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card cert-card bg-transparent h-100 overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <div class="col-4 col-md-5 p-0">
+                                <div class="cert-img-wrapper h-100 d-flex align-items-stretch" style="min-height: 140px; background: #f8f9fa;">
+                                    <img src="assets/images/certificates/Software Testing.png" 
+                                        alt="Software Testing" 
+                                        class="w-100 h-100" 
+                                        style="object-fit: cover; object-position: center;">
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-7 p-3">
+                                <h5 class="cert-title fw-bold mb-2 fs-5">Software Testing</h5>
+                                <div class="cert-issuer mb-2 text-secondary small d-flex justify-content-between">
+                                    <div class="text-truncate"><i class="bi bi-buildings-fill fs-6 me-1"></i> Great Learning Academy</div>  
+                                    <div class="text-truncate"><i class="bi bi-calendar-event-fill fs-6 me-1"></i> Mar 2024</div>
+                                </div>
+                                <p class="cert-desc small text-muted flex-grow-1">Certified in software quality assurance, manual testing, and debugging methodologies.</p>
+                                <a href="https://www.mygreatlearning.com/certificate/OUPBHNRN?referrer_code=GLLC0DS2LC6ZS" target="_blank" class="cert-link">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> Show credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Management System -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card cert-card bg-transparent h-100 overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <div class="col-4 col-md-5 p-0">
+                                <div class="cert-img-wrapper h-100 d-flex align-items-stretch" style="min-height: 140px; background: #f8f9fa;">
+                                    <img src="assets/images/certificates/Content Management System.png" 
+                                        alt="Content Management System" 
+                                        class="w-100 h-100" 
+                                        style="object-fit: cover; object-position: center;">
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-7 p-3">
+                                <h5 class="cert-title fw-bold mb-2 fs-5">Content Management System</h5>
+                                <div class="cert-issuer mb-2 text-secondary small d-flex justify-content-between">
+                                    <div class="text-truncate"><i class="bi bi-buildings-fill fs-6 me-1"></i> MASTEL Digital Academy</div>  
+                                    <div class="text-truncate"><i class="bi bi-calendar-event-fill fs-6 me-1"></i> May 2023</div>
+                                </div>
+                                <p class="cert-desc small text-muted flex-grow-1">Certified in managing and customizing web content through professional CMS platforms.</p>
+                                <a href="assets/certificates/pdf/Content Management System - Mastel.pdf" target="_blank" class="cert-link">
+                                    <i class="bi bi-file-earmark-pdf-fill me-1"></i> Show document
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification of Internship Program -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card cert-card bg-transparent h-100 overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <div class="col-4 col-md-5 p-0">
+                                <div class="cert-img-wrapper h-100 d-flex align-items-stretch" style="min-height: 140px; background: #f8f9fa;">
+                                    <img src="assets/images/certificates/Certification of Internship Program.png" 
+                                        alt="Certification of Internship Program" 
+                                        class="w-100 h-100" 
+                                        style="object-fit: cover; object-position: center;">
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-7 p-3">
+                                <h5 class="cert-title fw-bold mb-2 fs-5">Certification of Internship Program</h5>
+                                <div class="cert-issuer mb-2 text-secondary small d-flex justify-content-between">
+                                    <div class="text-truncate"><i class="bi bi-buildings-fill fs-6 me-1"></i> GLC Networks</div>  
+                                    <div class="text-truncate"><i class="bi bi-calendar-event-fill fs-6 me-1"></i> Jul 2021</div>
+                                </div>
+                                <p class="cert-desc small text-muted flex-grow-1">Completed joining as a participant in the Internship Program of the GLCNetwork workshop.</p>
+                                <a href="assets/certificates/pdf/GLC Networks.pdf" target="_blank" class="cert-link">
+                                    <i class="bi bi-file-earmark-pdf-fill me-1"></i> Show document
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Responsive Web Design -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card cert-card bg-transparent h-100 overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <div class="col-4 col-md-5 p-0">
+                                <div class="cert-img-wrapper h-100 d-flex align-items-stretch" style="min-height: 140px; background: #f8f9fa;">
+                                    <img src="assets/images/certificates/Responsive Web Design.png" 
+                                        alt="Responsive Web Design" 
+                                        class="w-100 h-100" 
+                                        style="object-fit: cover; object-position: center;">
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-7 p-3">
+                                <h5 class="cert-title fw-bold mb-2 fs-5">Responsive Web Design</h5>
+                                <div class="cert-issuer mb-2 text-secondary small d-flex justify-content-between">
+                                    <div class="text-truncate"><i class="bi bi-buildings-fill fs-6 me-1"></i> FreeCodeCamp</div>  
+                                    <div class="text-truncate"><i class="bi bi-calendar-event-fill fs-6 me-1"></i> Jul 2020</div>
+                                </div>
+                                <p class="cert-desc small text-muted flex-grow-1">Certified in mobile-first web design, HTML5, and advanced CSS styling.</p>
+                                <a href="https://www.freecodecamp.org/certification/sintya12/responsive-web-design" target="_blank" class="cert-link">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> Show credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Fundamentals -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card cert-card bg-transparent h-100 overflow-hidden">
+                        <div class="row g-0 h-100">
+                            <div class="col-4 col-md-5 p-0">
+                                <div class="cert-img-wrapper h-100 d-flex align-items-stretch" style="min-height: 140px; background: #f8f9fa;">
+                                    <img src="assets/images/certificates/Frontend Fundamentals.png" 
+                                        alt="Frontend Fundamentals" 
+                                        class="w-100 h-100" 
+                                        style="object-fit: cover; object-position: center;">
+                                </div>
+                            </div>
+                            <div class="col-8 col-md-7 p-3">
+                                <h5 class="cert-title fw-bold mb-2 fs-5">Frontend Fundamentals</h5>
+                                <div class="cert-issuer mb-2 text-secondary small d-flex justify-content-between">
+                                    <div class="text-truncate"><i class="bi bi-buildings-fill fs-6 me-1"></i> Pirple</div>  
+                                    <div class="text-truncate"><i class="bi bi-calendar-event-fill fs-6 me-1"></i> Jun 2020</div>
+                                </div>
+                                <p class="cert-desc small text-muted flex-grow-1">Certified in foundational front-end development and core web technologies.</p>
+                                <a href="https://www.credential.net/f6b8c8d1-d91d-4d20-85af-79e9ea4405ff#acc.IgW8DCml" target="_blank" class="cert-link">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> Show credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container py-4" data-aos="fade-up">
+            <h2 class="section-title mb-5">Hubungi Saya</h2>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <form id="contactForm" action="https://formsubmit.co/ajeng.sintya15@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Portfolio Contact">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" name="name" class="form-control" placeholder="Nama lengkap" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="email@domain.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Pesan</label>
+                            <textarea name="message" rows="4" class="form-control" placeholder="Tulis pesan..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-pill px-5">Kirim <i
+                                class="bi bi-send-fill ms-1"></i></button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-transparent p-4 rounded-4 h-100 card-3d-hover">
+                        <h5><i class="bi bi-envelope-fill text-primary me-2"></i>Email</h5>
+                        <a href="mailto:ajeng.sintya15@gmail.com" class="text-muted">ajeng.sintya15@gmail.com</a>
+                        <hr>
+                        <h5><i class="bi bi-geo-alt-fill text-primary me-2"></i>Lokasi</h5>
+                        <p class="text-muted">Bekasi, Jawa Barat</p>
+                        <h5 class="fw-bold">Connect with Me</h5>
+                        <div class="d-flex gap-1">
+                            <a href="https://github.com/Siintya" target="_blank" class="btn btn-outline-primary contact-link text-decoration-none">
+                                <i class="bi bi-github"></i> Github
+                            </a>
+                            <a href="https://www.linkedin.com/in/sintya-lestari/" target="_blank" class="btn btn-outline-primary contact-link text-decoration-none">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://wa.me/6281398096348?text=Halo%20Ajeng%2C%20saya%20tertarik%20dengan%20portofolio%20Anda" target="_blank" class="btn btn-outline-primary contact-link text-decoration-none">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top border-dark border-1">
+        <div class="container text-center text-muted">
+            &copy; <script>document.write(new Date().getFullYear())</script> A. Shintya Lestari. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up-short fs-2"></i>
+    </button>
+
+    <!-- SCRIPTS -->
+    <script src="assets/vendor/bootstrap-5.3/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 40, duration: 600 });
+    </script>
+
+    <!-- THREE.JS - Enhanced 3D Scene -->
+    <script type="importmap" src="assets/js/three.js"></script>
+    <script type="module" src="assets/js/three.js"></script>
+
+    <!-- Theme Toggle -->
+    <script>
+        (function () {
+            const toggleBtn = document.getElementById('themeToggle');
+            const icon = document.getElementById('themeIcon');
+            const html = document.documentElement;
+            let current = localStorage.getItem('bs-theme') || 'light';
+            html.setAttribute('data-bs-theme', current);
+            icon.className = current === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
+
+            toggleBtn.addEventListener('click', () => {
+                let next = html.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+                html.setAttribute('data-bs-theme', next);
+                localStorage.setItem('bs-theme', next);
+                icon.className = next === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
+            });
+        })();
+    </script>
+
+    <!-- BACK TO TOP SCRIPT -->
+    <script>
+        (function() {
+            const backToTopBtn = document.getElementById('backToTop');
+            let lastScrollY = 0;
+
+            // Show/hide button based on scroll position
+            function toggleBackToTop() {
+                const currentScrollY = window.scrollY;
+                
+                // Show button when scrolled down 300px
+                if (currentScrollY > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+                
+                lastScrollY = currentScrollY;
+            }
+
+            // Smooth scroll to top
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+
+            // Event listeners
+            window.addEventListener('scroll', toggleBackToTop, { passive: true });
+            backToTopBtn.addEventListener('click', scrollToTop);
+
+            // Initial check
+            toggleBackToTop();
+        })();
+    </script>
+</body>
+
+</html>
