@@ -3,7 +3,7 @@
     const toggleBtn = document.getElementById('themeToggle');
     const icon = document.getElementById('themeIcon');
     const html = document.documentElement;
-    let current = localStorage.getItem('bs-theme') || 'light';
+    let current = localStorage.getItem('bs-theme') || 'dark';
     html.setAttribute('data-bs-theme', current);
     icon.className = current === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
 
