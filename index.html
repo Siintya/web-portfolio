@@ -81,6 +81,9 @@
                             <a href="mailto:ajeng.sintya15@gmail.com" class="social-link">
                                 <i class="bi bi-envelope fs-4"></i>
                             </a>
+                            <a href="https://www.instagram.com/sintttya_/" class="social-link">
+                                <i class="bi bi-instagram fs-4"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="800">
@@ -687,26 +690,53 @@
             <h2 class="section-title mb-5">Hubungi Saya</h2>
             <div class="row g-5">
                 <div class="col-lg-6">
-                    <form id="contactForm" action="https://formsubmit.co/ajeng.sintya15@gmail.com" method="POST">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <input type="hidden" name="access_key" value="c08e7ed5-e379-4ce9-a2ec-3d6e15885ec9">
                         <input type="hidden" name="_subject" value="Portfolio Contact">
                         <input type="hidden" name="_captcha" value="false">
-                        <div class="mb-3">
-                            <label class="form-label">Nama</label>
-                            <input type="text" name="name" class="form-control" placeholder="Nama lengkap" required>
+                        
+                        <div class="mb-1">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" name="name" id="name" class="form-control" 
+                                placeholder="Nama lengkap" required
+                            >
+                            <div class="invalid-feedback">
+                                Tolong masukan nama lengkap anda.
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" placeholder="email@domain.com"
-                                required>
+                        <div class="mb-1">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" 
+                                placeholder="email@domain.com" required
+                            >
+                            <div class="invalid-feedback">
+                                Tolong masukkan alamat email yang valid.
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Pesan</label>
-                            <textarea name="message" rows="4" class="form-control" placeholder="Tulis pesan..."
-                                required></textarea>
+                        <div class="mb-1">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea name="message" id="message" rows="4" 
+                                class="form-control" placeholder="Tulis pesan..." required
+                            ></textarea>
+                            <div class="invalid-feedback">
+                                Pesan tidak boleh kosong.
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary rounded-pill px-5">Kirim <i
-                                class="bi bi-send-fill ms-1"></i></button>
+                        <button type="submit" id="submitBtn" class="btn btn-primary rounded-pill px-5 mt-4">
+                            Kirim <i class="bi bi-send-fill ms-1"></i>
+                        </button>
                     </form>
+                    <!-- Notif -->
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                        <div id="liveToast" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header text-white" id="toastHeader">
+                                <i class="bi bi-info-circle-fill me-2" id="toastIcon"></i> <strong class="me-auto" id="toastTitle">Sistem</strong> <small>Baru saja</small>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body" id="toastMessage">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-transparent p-4 rounded-4 h-100 card-3d-hover">
@@ -756,62 +786,8 @@
     <!-- THREE.JS - Enhanced 3D Scene -->
     <script type="importmap" src="assets/js/three.js"></script>
     <script type="module" src="assets/js/three.js"></script>
-
-    <!-- Theme Toggle -->
-    <script>
-        (function () {
-            const toggleBtn = document.getElementById('themeToggle');
-            const icon = document.getElementById('themeIcon');
-            const html = document.documentElement;
-            let current = localStorage.getItem('bs-theme') || 'light';
-            html.setAttribute('data-bs-theme', current);
-            icon.className = current === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
-
-            toggleBtn.addEventListener('click', () => {
-                let next = html.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
-                html.setAttribute('data-bs-theme', next);
-                localStorage.setItem('bs-theme', next);
-                icon.className = next === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
-            });
-        })();
-    </script>
-
-    <!-- BACK TO TOP SCRIPT -->
-    <script>
-        (function() {
-            const backToTopBtn = document.getElementById('backToTop');
-            let lastScrollY = 0;
-
-            // Show/hide button based on scroll position
-            function toggleBackToTop() {
-                const currentScrollY = window.scrollY;
-                
-                // Show button when scrolled down 300px
-                if (currentScrollY > 300) {
-                    backToTopBtn.classList.add('show');
-                } else {
-                    backToTopBtn.classList.remove('show');
-                }
-                
-                lastScrollY = currentScrollY;
-            }
-
-            // Smooth scroll to top
-            function scrollToTop() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
-
-            // Event listeners
-            window.addEventListener('scroll', toggleBackToTop, { passive: true });
-            backToTopBtn.addEventListener('click', scrollToTop);
-
-            // Initial check
-            toggleBackToTop();
-        })();
-    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact-form.js"></script>
 </body>
 
 </html>
