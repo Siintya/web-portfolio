@@ -33,8 +33,6 @@ h1 {
     "ELSH" 0;
 }
 
-
-
 [data-bs-theme="dark"] .navbar,
 [data-bs-theme="dark"] .card,
 [data-bs-theme="dark"] .bg-light,
@@ -113,6 +111,16 @@ h1 {
 .hero-content {
     width: 100%;
     padding-top: 60px;
+}
+
+#typed-text::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .profile-placeholder {

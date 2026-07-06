@@ -15,6 +15,51 @@
     });
 })();
 
+// ** TYPING EFFECT
+const typedText = document.getElementById('typed-text');
+const roles = [
+    'Programmer',
+    'Backend & Fullstack Development',
+    'Laravel & PHP Developer',
+    '2+ years building scalable web apps'
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+    const currentRole = roles[roleIndex];
+    
+    if (isDeleting) {
+        typedText.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        typedText.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+    }
+    
+    // Kecepatan default mengetik & menghapus
+    let speed = isDeleting ? 50 : 100;
+    
+    // Jika teks sudah selesai diketik penuh
+    if (!isDeleting && charIndex === currentRole.length) {
+        speed = 2000; // Jeda 2 detik sebelum mulai menghapus
+        isDeleting = true;
+    } 
+    // Jika teks sudah terhapus semua
+    else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length; // Ganti ke role berikutnya
+        speed = 500; // Jeda 0.5 detik sebelum mulai mengetik teks baru
+    }
+    
+    setTimeout(typeEffect, speed);
+}
+
+// PENTING: Panggil fungsi ini agar script berjalan saat halaman dimuat
+document.addEventListener('DOMContentLoaded', typeEffect);
+
 // ** BACK TO TOP SCRIPT 
 (function() {
     const backToTopBtn = document.getElementById('backToTop');
