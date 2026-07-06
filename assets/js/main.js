@@ -15,6 +15,18 @@
     });
 })();
 
+// ** NAVBAR SCROLL EFFECT
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        // Hapus class active dari semua nav-link
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(item => item.classList.remove('active'));
+            
+        // Tambahkan class active ke menu yang diklik
+        this.classList.add('active');
+    });
+});
+
+
 // ** TYPING EFFECT
 const typedText = document.getElementById('typed-text');
 const roles = [

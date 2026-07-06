@@ -4409,6 +4409,7 @@ fieldset:disabled .btn {
 .nav-tabs .nav-link.active {
     color: var(--bs-nav-tabs-link-active-color);
     background-color: var(--bs-nav-tabs-link-active-bg);
+    
     border-color: var(--bs-nav-tabs-link-active-border-color)
 }
 
@@ -4558,7 +4559,9 @@ fieldset:disabled .btn {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: var(--bs-navbar-active-color)
+    /* color: var(--bs-navbar-active-color) */
+    color: #455fa6 !important;
+    font-weight: 600;
 }
 
 .navbar-nav .dropdown-menu {
