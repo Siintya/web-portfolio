@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top py-2">
         <div class="container">
@@ -51,7 +51,7 @@
     </nav>
 
     <!-- CONTENT -->
-    <section id="article" class="py-5 mt-5 section-bg">
+    <section id="article" class="py-5 section-bg min-vh-100 d-flex flex-column justify-content-center">
         <!-- Badge -->
         <div class="d-flex justify-content-center mb-4" data-aos="fade-right" data-aos-duration="800">
             <span class="badge-coming-soon bg-opacity-10 text-uppercase">
@@ -66,11 +66,11 @@
                     Comming <span class="text-primary">Soon!</span>
                 </h1>
                 <p class="lead text-secondary mx-auto text-center" style="max-width: 600px;">
-                    Halaman ini akan menjadi tempat saya berbagi insight seputar backend architecture, clean code, tips optimasi server, dan perjalanan belajar programming.
+                    Halaman ini akan menjadi tempat saya berbagi insight seputar backend architecture, clean code, dan perjalanan belajar programming.
                 </p>
                 <!-- Tombol Kembali ke Portfolio -->
                 <div class="mt-2 d-flex justify-content-center">
-                    <a href="index.html" class="btn btn-primary-article">
+                    <a href="index.html" class="btn btn-primary">
                         <i class="bi bi-arrow-left me-2"></i>Back to Home
                     </a>
                 </div>
@@ -108,9 +108,11 @@
         </div>
 
     </section>
+    
     <div class="glow-bg"></div>
+
     <!-- FOOTER -->
-    <footer class="py-4 border-top border-dark border-1 section-bg">
+    <footer class="py-4 border-top fixed-bottom border-dark border-1 section-bg">
         <div class="container text-center text-muted">
             &copy; <script>document.write(new Date().getFullYear())</script> A. Shintya Lestari. All rights reserved.
         </div>
