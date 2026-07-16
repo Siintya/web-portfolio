@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', typeEffect);
         const currentScrollY = window.scrollY;
                 
         // Show button when scrolled down 300px
-        if (currentScrollY > 10) {
+        if (currentScrollY > 300) {
             backToTopBtn.classList.add('show');
         } else {
             backToTopBtn.classList.remove('show');

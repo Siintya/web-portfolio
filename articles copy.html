@@ -30,16 +30,16 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-lg-2 align-items-center">
-                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="index.html#skills">Skills</a></li>
-                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="index.html#experience">Experience</a></li>
-                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="index.html#projects">Projects</a></li>
-                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="index.html#certificates">Certificates</a></li>
-                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="articles.html">Articles</a></li>
-                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="index.html#contact">Contact</a></li>
-                    <li class="nav-item py-1 py-lg-0">
+                <ul class="navbar-nav ms-auto gap-2 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item">
                         <button id="themeToggle" class="btn rounded-pill px-3 py-1">
                             <!-- <i class="bi bi-moon-fill" id="themeIcon"></i> -->
                             <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
@@ -51,34 +51,34 @@
     </nav>
 
     <!-- CONTENT -->
-    <section id="article" class="py-5 my-auto section-bg flex-grow-1 d-flex flex-column justify-content-center">
-        <!-- Visual Preview / Skeleton Cards (Simulasi Halaman Artikel Terisi) -->
-        <div class="container" data-aos="fade-right" data-aos-duration="800">
-            <!-- Badge -->
-            <div class="d-flex justify-content-center mb-4">
-                <span class="badge-coming-soon bg-opacity-10 text-uppercase">
-                    <i class="bi bi-journal-code me-2"></i>Articles Space
-                </span>
-            </div>
+    <section id="article" class="py-5 section-bg min-vh-100 d-flex flex-column justify-content-center">
+        <!-- Badge -->
+        <div class="d-flex justify-content-center mb-4" data-aos="fade-right" data-aos-duration="800">
+            <span class="badge-coming-soon bg-opacity-10 text-uppercase">
+                <i class="bi bi-journal-code me-2"></i>Articles Space
+            </span>
+        </div>
 
-            <!-- Heading Utama -->
-            <div class="row justify-content-center mb-3">
-                <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold mb-3 text-center">
-                        Comming <span class="text-primary">Soon!</span>
-                    </h1>
-                    <p class="lead text-secondary mx-auto text-center" style="max-width: 600px;">
-                        Halaman ini akan menjadi tempat saya berbagi insight seputar backend architecture, clean code, dan perjalanan belajar programming.
-                    </p>
-                    <!-- Tombol Kembali ke Portfolio -->
-                    <div class="mt-2 d-flex justify-content-center">
-                        <a href="index.html" class="btn btn-primary">
-                            <i class="bi bi-arrow-left me-2"></i>Back to Home
-                        </a>
-                    </div>
+        <!-- Heading Utama -->
+        <div class="row justify-content-center mb-3" data-aos="fade-right" data-aos-duration="800">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-3 text-center">
+                    Comming <span class="text-primary">Soon!</span>
+                </h1>
+                <p class="lead text-secondary mx-auto text-center" style="max-width: 600px;">
+                    Halaman ini akan menjadi tempat saya berbagi insight seputar backend architecture, clean code, dan perjalanan belajar programming.
+                </p>
+                <!-- Tombol Kembali ke Portfolio -->
+                <div class="mt-2 d-flex justify-content-center">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="bi bi-arrow-left me-2"></i>Back to Home
+                    </a>
                 </div>
             </div>
+        </div>
 
+        <!-- Visual Preview / Skeleton Cards (Simulasi Halaman Artikel Terisi) -->
+        <div class="container" data-aos="fade-right" data-aos-duration="800">
             <div class="row g-4 justify-content-center text-start opacity-50">
                 <div class="col-md-4 col-sm-6">
                     <div class="p-4 skeleton-card">
@@ -106,7 +106,10 @@
                 </div>
             </div>
         </div>
+
     </section>
+    
+    <div class="glow-bg"></div>
 
     <!-- FOOTER -->
     <footer class="py-4 border-top fixed-bottom border-dark border-1 section-bg">
